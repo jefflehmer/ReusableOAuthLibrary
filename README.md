@@ -1,5 +1,9 @@
 # ReusableOAuthLibrary
-Steps on how to include the new OAuth_Library in a separate Resource Server that will support the OAuth Claim Attributes for Security.  This code is a simple extension from the lessons learned on Taiseer Joudeh's blog on adding OAuth to your ASP.NET Web API project using OWIN and Identity.  Taiseer's blog can be found at this link.  This code will make a lot more sense if you've read it.
+Steps on how to include the new OAuth_Library in a separate Resource Server that will support the OAuth Claim Attributes for Security.  This code is a simple extension from the lessons learned on Taiseer Joudeh's blog on adding OAuth to your ASP.NET Web API project using OWIN and Identity.  Use this url to test this project.  It simply returns the time and puts it into a message immediately below the button.
+
+http://localhost:19985/test.html#/testserver
+
+Taiseer's blog can be found at this link.  This code will make a lot more sense if you've read it.
 
 http://bitoftech.net/2015/03/31/asp-net-web-api-claims-authorization-with-asp-net-identity-2-1/
 
