@@ -12,7 +12,6 @@ app.controller('loginController', ['$scope', '$location', 'authService', functio
 
         authService.login($scope.loginData).then(function (response) {
 
-            //window.location.replace('/home/access');
             $location.path('#/home');
         },
          function (err) {
