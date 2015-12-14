@@ -1,0 +1,52 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.product-section {
+    width: 950px;
+    padding: 5px;
+}
+
+    .product-section p {
+        margin-top: 1em;
+    }
+
+    .product-section label {
+        display: inline-block;
+        width: 200px;
+        padding-right: 5px;
+        text-align: right;
+    }
+
+    .product-section .k-button {
+        margin: 1em 0 0 105px;
+    }
+
+.k-readonly {
+    color: gray;
+}
+
+.pat-text {
+    color: darkblue;
+}

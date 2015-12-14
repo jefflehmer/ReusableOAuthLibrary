@@ -1,0 +1,8 @@
+﻿<form class="form-login" role="form">
+    <h2 class="form-login-heading">Enter your Password to finish activating your account:</h2>
+    <input type="password" class="form-control" placeholder="Password" data-ng-model="confirmData.password" required>
+    <button class="btn btn-lg btn-info btn-block" type="submit" data-ng-click="confirm()">Confirm</button>
+    <div data-ng-hide="ilmessaggioro == ''" class="alert alert-info">
+        {{ilmessaggioro}}
+    </div>
+</form>
