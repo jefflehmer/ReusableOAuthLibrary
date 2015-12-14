@@ -3,20 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuth_WebTest", "OAuth_WebTest.csproj", "{E239B32B-D75B-40B5-8FFD-C48C86403EE2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuth_WebTest", "Applications\OAuth_WebTest\OAuth_WebTest.csproj", "{E239B32B-D75B-40B5-8FFD-C48C86403EE2}"
 	ProjectSection(ProjectDependencies) = postProject
 		{1E38C06E-6ACF-4EC0-A661-65A344C4D2EF} = {1E38C06E-6ACF-4EC0-A661-65A344C4D2EF}
 		{3C6EEA85-2F9B-4874-ADEA-F046D58B06D2} = {3C6EEA85-2F9B-4874-ADEA-F046D58B06D2}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuth_Library", "..\..\Libraries\OAuth_Library\OAuth_Library.csproj", "{2EBCF824-374E-4712-A609-B0CB267D7368}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuth_Library", "Libraries\OAuth_Library\OAuth_Library.csproj", "{2EBCF824-374E-4712-A609-B0CB267D7368}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuth_Server", "..\..\Services\OAuth_Server\OAuth_Server.csproj", "{1E38C06E-6ACF-4EC0-A661-65A344C4D2EF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuth_Server", "Services\OAuth_Server\OAuth_Server.csproj", "{1E38C06E-6ACF-4EC0-A661-65A344C4D2EF}"
 	ProjectSection(ProjectDependencies) = postProject
 		{2EBCF824-374E-4712-A609-B0CB267D7368} = {2EBCF824-374E-4712-A609-B0CB267D7368}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_Resource_Server", "..\..\Services\Test_Resource_Server\Test_Resource_Server.csproj", "{3C6EEA85-2F9B-4874-ADEA-F046D58B06D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_Resource_Server", "Services\Test_Resource_Server\Test_Resource_Server.csproj", "{3C6EEA85-2F9B-4874-ADEA-F046D58B06D2}"
 	ProjectSection(ProjectDependencies) = postProject
 		{2EBCF824-374E-4712-A609-B0CB267D7368} = {2EBCF824-374E-4712-A609-B0CB267D7368}
 	EndProjectSection
