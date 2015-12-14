@@ -28,7 +28,6 @@ app.config(function ($routeProvider) {
 app.config(['$httpProvider', function ($httpProvider) {
 
     $httpProvider.defaults.useXDomain = true;
-
     $httpProvider.interceptors.push('authInterceptorService');
 }]);
 

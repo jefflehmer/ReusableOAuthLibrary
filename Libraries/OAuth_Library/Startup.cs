@@ -36,6 +36,7 @@ namespace OAuth_Library
         public void ConfigureOAuth(IAppBuilder app)
         {
             var issuer = AuthServerHttp;
+            var audience = "099153c2625149bc8ecb3e85e03f0022";
             var secret = TextEncodings.Base64Url.Decode("IxrAjDoa2FqElO7IhrSrUJELhUckePEPVpaePlS_Xaw");
 
             // Api controllers with an [Authorize] attribute will be validated with JWT
@@ -43,6 +44,7 @@ namespace OAuth_Library
                 new JwtBearerAuthenticationOptions
                 {
                     AuthenticationMode = AuthenticationMode.Active,
+                    AllowedAudiences = new[] { audience },
                     IssuerSecurityTokenProviders = new IIssuerSecurityTokenProvider[]
                     {
                         new SymmetricKeyIssuerSecurityTokenProvider(issuer, secret)
