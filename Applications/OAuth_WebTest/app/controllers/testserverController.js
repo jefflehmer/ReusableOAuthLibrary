@@ -1,15 +1,15 @@
 ﻿'use strict';
-app.controller('testserverController', ['$scope', '$http', function ($scope, $http) {
+app.controller('testserverController', ['$scope', '$http', 'constants', function ($scope, $http, constants) {
 
     $scope.message = "";
 
     $scope.pushme = function () {
 
-        $http.get("http://localhost:59918/api/now")
+        $http.get(constants.ResourceServiceBase + "api/now")
             .success(function (response) { $scope.message = response; });
         // example of an alternative call that gives you more control
         //$http({
-        //    url:'http://localhost:59918/api/now',
+        //    url:constants.ResourceServiceBase + "api/now",
         //    method: "GET",
         //    withCredentials:true,
         //    headers: { 'Content-Type': 'application/json; charset=utf-8'}

@@ -1,5 +1,4 @@
-﻿var Root_Server_Path = 'http://localhost:59918/';
-(function () {
+﻿(function () {
 
     var app = angular.module("OAuthTestApp");
 
