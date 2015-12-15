@@ -7,18 +7,18 @@ Taiseer's blog can be found at this link.  This code will make a lot more sense 
 
 http://bitoftech.net/2015/03/31/asp-net-web-api-claims-authorization-with-asp-net-identity-2-1/
 
-Steps to enable an independent DD Resource Server that supports the new DD OAuth Claim Attributes for Security
+Steps to enable an independent Resource Server that supports the new OAuth Claim Attributes for Security
 
-In the DD Resource Server project (C#):
+In the Resource Server project (C#):
 
-1. ONE Add a reference to the “DD_OAuth_Library” in your resource project.
+1. ONE Add a reference to the “OAuth_Library” in your resource project.
 
-2. TWO You need to reference the OWIN services defined in the DD_OAuth_Library  in your resource server.
+2. TWO You need to reference the OWIN services defined in the OAuth_Library  in your resource server.
 
 In your web.config, make sure you have the following appSetting value
 
       <appSettings>
-        <add key="owin:appStartup" value="DD_OAuth_Library.Startup, DD_OAuth_Library" />
+        <add key="owin:appStartup" value="OAuth_Library.Startup, OAuth_Library" />
       </appSettings>
       
 3. THREE Make sure you are not inadvertently removing the “OptionsVerbHandler” from your web server.  This will allow the browser to send a “preflight” request to your web service to verify it can handle a CORS request.
@@ -32,7 +32,7 @@ In your web.config file and add the following.
           
 4.  FOUR Set the following in your WebApiConfig.Register(..) method: 
 
-        using DD_OAuth_Library;
+        using OAuth_Library;
         config.EnableCors("*", "*", "*");
 
 Using the Authorization Attributes to enforce security:
@@ -59,7 +59,7 @@ In the SPA pages that use Angular v1.x:
             
 Note: If you started with an “Empty” AspNet project you may need to add the following nuget packages. 
 
-There are a lot you won’t have to worry about because they were moved to the DD_OAuth_Library.
+There are a lot you won’t have to worry about because they were moved to the OAuth_Library.
 
 1.	Microsoft.AspNet.WebApi.Client
 2.	Microsoft.AspNet.WebApi.Core
