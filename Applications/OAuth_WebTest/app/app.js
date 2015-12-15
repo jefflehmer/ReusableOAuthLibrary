@@ -25,11 +25,6 @@ app.config(function ($routeProvider) {
     $routeProvider.otherwise({ redirectTo: "/testserver" });
 });
 
-app.constant('constants', {
-    OAuthServiceBase: 'http://localhost:61451/',
-    ResourceServiceBase: 'http://localhost:59918/'
-});
-
 app.config(['$httpProvider', function ($httpProvider) {
 
     $httpProvider.defaults.useXDomain = true;

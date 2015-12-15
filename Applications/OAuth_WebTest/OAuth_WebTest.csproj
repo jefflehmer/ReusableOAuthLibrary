@@ -73,6 +73,7 @@
     <Content Include="app\controllers\testserverController.js" />
     <Content Include="app\services\authInterceptorService.js" />
     <Content Include="app\services\authService.js" />
+    <Content Include="app\services\constantsService.js" />
     <Content Include="app\views\confirm.html" />
     <Content Include="app\views\login.html" />
     <Content Include="app\views\signup.html" />
