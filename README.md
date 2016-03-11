@@ -41,15 +41,10 @@ Note: If you started with an “Empty” AspNet project you may need to add the 
 There are a lot you won’t have to worry about because they were moved to the OAuth_Library.
 
 1.	Microsoft.AspNet.WebApi.Client
-2.	
 2.	Microsoft.AspNet.WebApi.Core
-3.	
 3.	Microsoft.AspNet.WebApi.WebHost
-4.	
 4.	Microsoft.Owin.Host.SystemWeb !!! REMEMBER THIS ONE!  If your resource server works locally but not deployed to the server it could be because you aren't including this.  It will work locally because the VS project includes it but VS will not "Publish" it to the server.
-5.	
 5.	Microsoft.Owin (may not be necessary for your project)
-6.	
 6.	Owin (may not be necessary for your project)
 
 
