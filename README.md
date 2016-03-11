@@ -35,6 +35,17 @@ In your web.config file and add the following.
         using OAuth_Library;
         config.EnableCors("*", "*", "*");
 
+
+Note: If you started with an “Empty” AspNet project you may need to add the following nuget packages. 
+There are a lot you won’t have to worry about because they were moved to the OAuth_Library.
+1.	Microsoft.AspNet.WebApi.Client
+2.	Microsoft.AspNet.WebApi.Core
+3.	Microsoft.AspNet.WebApi.WebHost
+4.	Microsoft.Owin.Host.SystemWeb !!! REMEMBER THIS ONE!  If your resource server works locally but not deployed to the server it could be because you aren't including this.  It will work locally because the VS project includes it but VS will not "Publish" it to the server.
+5.	Microsoft.Owin (may not be necessary for your project)
+6.	Owin (may not be necessary for your project)
+
+
 Using the Authorization Attributes to enforce security:
 
 1.	There are two possible security attributes you can now use before either your ApiController declaration or the separate api methods.
@@ -57,12 +68,3 @@ In the SPA pages that use Angular v1.x:
         $http.get("http://localhost:24483/api/now")
             .success(function (response) { $scope.message = response; });
             
-Note: If you started with an “Empty” AspNet project you may need to add the following nuget packages. 
-
-There are a lot you won’t have to worry about because they were moved to the OAuth_Library.
-
-1.	Microsoft.AspNet.WebApi.Client
-2.	Microsoft.AspNet.WebApi.Core
-3.	Microsoft.AspNet.WebApi.WebHost
-4.	Microsoft.Owin
-5.	Owin
